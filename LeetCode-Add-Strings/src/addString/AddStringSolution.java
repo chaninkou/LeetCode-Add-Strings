@@ -8,12 +8,14 @@ public class AddStringSolution {
 	        int x;
 	        int y;
 	        
+	        // Work from last element
 	        for(int i = num1.length() - 1, j = num2.length() - 1; i >= 0 || j >= 0 || carry == 1; i--, j--){
 	            if(i < 0){
 	                x = 0;
 	            } else {
 	                x = num1.charAt(i) - '0';
 	            }
+	            
 	            if(j < 0){
 	                y = 0;
 	            } else {
