@@ -1,4 +1,4 @@
-package addString;
+package leetcode415;
 
 public class AddStringSolution {
 	    public String addStrings(String num1, String num2) {
@@ -10,7 +10,7 @@ public class AddStringSolution {
 	        
 	        // Work from last element
 	        for(int i = num1.length() - 1, j = num2.length() - 1; i >= 0 || j >= 0 || carry == 1; i--, j--){
-	            if(i < 0){
+	            if(i < 0){ // in case one string is longer than the other
 	                x = 0;
 	            } else {
 	                x = num1.charAt(i) - '0';
